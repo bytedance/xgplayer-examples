@@ -1,0 +1,4 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+003.mp4 filter=lfs diff=lfs merge=lfs -text
+elephant.mp4 filter=lfs diff=lfs merge=lfs -text
+world.mp4 filter=lfs diff=lfs merge=lfs -text
