@@ -1,2 +1,2 @@
 # xgplayer-examples
-xgplayer-exampes
+xgplayer-examples

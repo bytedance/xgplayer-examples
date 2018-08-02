@@ -29,6 +29,29 @@
                 row: 10,
                 urls: ['./xgplayer-demo-thumbnail.jpg'],
             },
+            textTrack: [
+              {
+                src: "./textTrack-1.vtt",
+                kind: "subtitles",
+                label: "字幕1",
+                srclang: "zh",
+                default: true
+              },
+              {
+                src: "./textTrack-2.vtt",
+                kind: "subtitles",
+                label: "字幕2",
+                srclang: "en",
+                default: false
+              }
+            ],
+            textTrackStyle: {
+              "background-color": "#ff0",
+              "color": "#000",
+              "font-size": "26px",
+            },
+            whitelist: [''],
+            playsinline: true
         })
         player.on('error', function (err) {
             console.log(JSON.stringify(err));
