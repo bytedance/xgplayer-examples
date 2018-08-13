@@ -16,46 +16,46 @@
     <script src="../../packages/xgplayer/browser/index.js" charset="utf-8"></script>
     <script src="../../packages/xgplayer-mp4/browser/index.js" charset="utf-8"></script>
     <script type="text/javascript">
-        let player=new Player({
-            id:'vs',
-            url:'./xgplayer-demo.mp4',
-            poster:'./poster.png',
-            playbackRate: [0.5, 0.75, 1, 1.5, 2],
-            thumbnail: {
-                pic_num: 44,
-                width: 160,
-                height: 90,
-                col: 10,
-                row: 10,
-                urls: ['./xgplayer-demo-thumbnail.jpg'],
+        let player = new Player({
+          id: 'vs',
+          url: './xgplayer-demo.mp4',
+          poster: './poster.png',
+          playbackRate: [0.5, 0.75, 1, 1.5, 2],
+          thumbnail: {
+            pic_num: 44,
+            width: 160,
+            height: 90,
+            col: 10,
+            row: 10,
+            urls: ['./xgplayer-demo-thumbnail.jpg']
+          },
+          textTrack: [
+            {
+              src: './textTrack-1.vtt',
+              kind: 'subtitles',
+              label: '字幕1',
+              srclang: 'zh',
+              default: true
             },
-            textTrack: [
-              {
-                src: "./textTrack-1.vtt",
-                kind: "subtitles",
-                label: "字幕1",
-                srclang: "zh",
-                default: true
-              },
-              {
-                src: "./textTrack-2.vtt",
-                kind: "subtitles",
-                label: "字幕2",
-                srclang: "en",
-                default: false
-              }
-            ],
-            textTrackStyle: {
-              "background-color": "#ff0",
-              "color": "#000",
-              "font-size": "26px",
-            },
-            whitelist: [''],
-            playsinline: true
+            {
+              src: './textTrack-2.vtt',
+              kind: 'subtitles',
+              label: '字幕2',
+              srclang: 'en',
+              default: false
+            }
+          ],
+          textTrackStyle: {
+            'background-color': '#ff0',
+            'color': '#000',
+            'font-size': '26px'
+          },
+          whitelist: [''],
+          playsinline: true
         })
         player.on('error', function (err) {
-            console.log(JSON.stringify(err));
-        });
+          console.log(JSON.stringify(err))
+})
     </script>
 
 
