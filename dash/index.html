@@ -14,29 +14,14 @@
         <div id="vs"></div>
     </section>
     <script src="../../packages/xgplayer/browser/index.js" charset="utf-8"></script>
-    <!-- <script src="../../packages/xgplayer-shaka/browser/index.js" charset="utf-8"></script>
+    <script src="../../packages/xgplayer-shaka/browser/index.js" charset="utf-8"></script>
     <script type="text/javascript">
         var player=new ShakaJsPlayer({
             id:'vs',
             url:'./xgplayer-demo_dash.mpd',
             poster:'./poster.png'
         })
-    </script> -->
-
-    <script src="../../packages/xgplayer-dash/browser/index.js" charset="utf-8"></script>
-    <script type="text/javascript">
-        var player=new Player({
-              id:'vs',
-              url:'./drm-xgplayer-demo/out.mpd',
-              dashOpts: {
-                protData: {
-                  clearKeys: {
-                    '0123456789abcdef0123456789abcdef': '00112233445566778899aabbccddeeff',
-                  },
-                },
-              }
-          })
-        </script>
+    </script>
 </body>
 
 </html>
